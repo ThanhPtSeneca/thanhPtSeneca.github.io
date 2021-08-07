@@ -15,6 +15,11 @@ div img
     margin: 20px auto;
     padding: 10px 10px;
 }
+aside h2, aside p
+{
+display: block;
+margin: 10px auto;
+}
 div h1 
 {
     color: aqua;

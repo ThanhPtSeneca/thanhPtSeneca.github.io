@@ -3,7 +3,12 @@
 display: flex;
 flex-wrap: nowrap;
 }
-
+.container aside h2, .container aside p
+{
+        display: block;
+        margin: 20px auto;
+        padding: 25px auto;
+}
 
 .container   aside { width: 500px; float: left; margin: 10px auto}
     .container main  { width: 500px; float: left;
