@@ -5,7 +5,7 @@ flex-wrap: nowrap;
 }
 
 
-.container   aside { width: 500px; float: left; margin: 10px 25px;}
+.container   aside { width: 500px; float: left; margin: 10px 10%}
     .container main  { width: 500px; float: left;
     margin: 10px 25px; }
     .container   .clear { clear: both; }

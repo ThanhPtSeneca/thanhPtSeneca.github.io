@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Georama">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/info.css">
     <link rel="stylesheet" href="./css/cover.css">
+    <title>Personal Information</title>
+    <script src="./js/info.js"></script>
     <title>Cover Page</title>
 </head>
 <body>
@@ -15,9 +21,61 @@
             <img src="./img/TienThanhPham_25p.jpg" alt="Profile">
             <h1>Tien Thanh Pham</h1>
             <h4>Software Engineer</h4>
-            <div> <button class="roundButton" id="BTresume" onclick=""> <i class="fa fa-download" aria-hidden="true"></i> <a href="./info.html">&nbsp;&nbsp;Resume</a></button>
+            <div> <button class="roundButton" id="BTresume" onclick=""> <i class="fa fa-download" aria-hidden="true"></i> <a href="./index.html#P_info">&nbsp;&nbsp;Resume</a></button>
                 <button class="roundButton" id="BTContact" onclick=""> <a href="./contact.html"> Contact me</a></button></div>
         </div>
     </section>
+    <section>
+        <div id="P_info" class="container">
+            <nav>
+            </nav>
+            <aside>
+              <h2>About Me and  Academic Honesty</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non.</p>
+              <p>I declare that my assessment is wholly my own work in accordance with Seneca Academic
+                Policy. No part of this assessment has been copied manually or electronically from any other
+                source (including web sites) except for the information supplied by the WEB222 instructors
+                and / or made available in this assessment for my use. I also declare that no part of this
+                assignment has been distributed to other students.</p>
+                <h3 id="date"></h3>
+            </aside>
+            <main>
+              <article>
+                <h2>Basic Information</h2>
+                <div class="basicInfo">
+                    <span class="title">AGE: </span> <span class="descp"> 30</span>
+                </div>
+                <div class="basicInfo">
+                    <span class="title">EMAIL: </span> <span class="descp"> ttpham26@myseneca.ca</span>
+                </div>
+                <div class="basicInfo">
+                    <span class="title">LANGUAGE: </span> <span class="descp"> English/Vietnamese</span>
+                </div>
+                <div class="basicInfo">
+                    <span class="title">CLASS SECTION: </span> <span class="descp"> ZAA</span>
+                </div>
+                <div class="basicInfo">
+                    <span class="title">STUDENT ID: </span> <span class="descp"> 124150202</span>
+                </div>
+                <div class="basicInfo">
+                    <span class="title">INSTRUCTOR: </span> <span class="descp"> Dr.Muath Alzghool</span>
+                </div>
+              </article>
+            </main>
+            <div class="clear"></div>
+    </section>
+    <section>
+        <div class="education">        
+            <main>
+                <h2>Education</h2>
+                <div class="edu_tag">
+                    <span class="school"></span> <span class="edu_description"></span>
+                </div>
+            </main>
+        </div>
+    </section>
+    <script>
+        window.onload = getStart();
+      </script>
 </body>
 </html>
