@@ -5,7 +5,7 @@ flex-wrap: nowrap;
 }
 
 
-.container   aside { width: 500px; float: left; margin: 10px 10%}
+.container   aside { width: 500px; float: left; margin: 10px auto}
     .container main  { width: 500px; float: left;
     margin: 10px 25px; }
     .container   .clear { clear: both; }
@@ -20,7 +20,7 @@ flex-wrap: nowrap;
     .education { 
         display: flex;
         flex-wrap: nowrap;
-        max-width: 1100px; margin: 10px 8%; font-family: 'Ubuntu', sans-serif;}
+        max-width: 1100px; margin: 10px auto; font-family: 'Ubuntu', sans-serif;}
     .education main{
         width: 1100px; float: left;
         margin: 20px 25px;
