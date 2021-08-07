@@ -1,7 +1,7 @@
 .mainContent{
     margin: 0 auto;
     align-content: center;
-    padding: 0 0 30px 0;
+    padding: 10px 0 30px 0;
     max-width: 1100px;
     min-width: 600px;
     background-size:100%;
@@ -12,14 +12,10 @@ div img
 {
     display: flex;
     flex-wrap: nowrap;
-    margin: 20px auto;
+    margin: 30px auto 10px auto;
     padding: 10px 10px;
 }
-aside h2, aside p
-{
-display: block;
-margin: 10px auto;
-}
+
 div h1 
 {
     color: aqua;
@@ -83,6 +79,7 @@ a{
 }
 .edu_tag
 {
+    min-width: 600px;
     display: flex;
     flex-wrap: nowrap;
     margin: 20px auto;
@@ -93,7 +90,8 @@ a{
 .Degree
 {
     width: 200px;
-    height: 80px;
+    height: 100px;
+    min-height: 100px;
     padding: 30px 20px 20px 20px;
     display: block;
     text-align: center;
@@ -105,29 +103,43 @@ a{
 }
 .edu_tag span h3
 {
-    margin: 5px auto;
-    font-size: 1em;
+    margin: 15px auto;
+    font-size: 1.2em;
     font-family: 'Ubuntu', sans-serif;
 }
 .edu_tag span h4
 {
     margin: 0 auto;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-family: 'Ubuntu', sans-serif;
 }
 .edu_description
 {
-    margin: 10px auto;
-    padding: 30px 20px 20px 20px;
+    margin: 10px 30px 10px 30px;
+    padding: 20px 20px;
     display: block;
-    text-align: center;
 
 }
-.edu_description  h4
+span.edu_description  h3{
+     margin: 0 auto;
+    font-size: 1.5em;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+span.edu_description  h4
+{
+    margin: 5px auto;
+    font-size: 1em;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+}
+span.edu_description  h5
 {
     margin: 0 auto;
     font-size: 0.8em;
     color: black;
     font-family: 'Ubuntu', sans-serif;
-    
+    text-align: left;
 }

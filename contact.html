@@ -5,8 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    <script src="./js/contact.js"></script>
+    <link rel="stylesheet" href="./css/contact.css">
 </head>
 <body>
+    <header>
+        <h1>Contact window</h1>
+    </header>
+    <div class="mainContent">
     
+    </div>
+    <form method="POST" id="form1" action="https://httpbin.org/post" onsubmit="return validateData();">
+        <fieldset>
+            <legend>Contact information</legend>
+            <div>
+                 <label for="name"> Name: </label>   <input type="text"  required maxlength="30" id="name" placeholder="Enter Name" size="15" name="name"/>
+                 <span id="nameErrorMes" style="color: red;"></span>
+                </div>
+    
+            <div>
+                <label for="email"> Email Address: </label> <input type="email"  required id="email"   name="email"/>
+            </div>
+            <div>
+                <label for="address"> Address: </label> <input type="text" required  id="address"   name="address"/>
+            </div>
+            <div>
+                <label for="city"> City: </label> 
+                <input type="text" required name="course" id="" list="city" autocomplete="address-level1">
+                <datalist id="city">
+                    <option value="Toronto"></option>
+                    <option value="Ottawa"></option>
+                    <option value="Quebec"></option>
+                    <option value="Montreal"></option>
+                    <option value="Vancouver"></option>
+                    <option value="Calgary"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="city"> Postal Code: </label> <input type="text"  required id="postalCode"   name="postalCode"/>
+            </div>
+            <div>
+                <label id="rad" for="radio"> Options: </label>  <input type="radio" name="mode" id="radio" checked onchange="hideRateBox();"> Question <input type="radio" name="mode" id="radio" onchange="hideRateBox();"> Comment<input type="radio" name="mode" id="radio" onchange="displayRateBox();"> Hiring
+                
+            </div>
+            <div id="rate">
+                
+            </div>
+           <div>
+               Message:
+               <textarea name="message" id="mess" cols="100" rows="10"></textarea>
+           </div>
+        </fieldset>
+        <div class="buttons">
+            <button type="submit" form="form1">Submit</button> <button form="form1" type="reset">Clear</button>
+        </div>
+    </form>
 </body>
 </html>
