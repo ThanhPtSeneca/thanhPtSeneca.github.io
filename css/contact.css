@@ -58,8 +58,9 @@ div.buttons
 }
 button
 { width: 160px;
-    height: 30px;
+    height: 40px;
     margin: 20px 20px;
+    font-size: 1.5em;
    text-align: center;
    border:#DDDDDD solid ;
     border-radius: 3px;

@@ -2,7 +2,7 @@ function validateData()
 {
     const condition = /^[a-zA-Z]+$/g;
     const postalCondition = /^\w{6}$/g;
-    let name = document.getElementById('name').value.trim();
+    let name = document.getElementById('name').value.replace(/\s/g,'');
     let postalCode = document.getElementById('postalCode').value.replace(/\s/g,'');
     console.log(postalCode);
     let error="";
@@ -31,7 +31,7 @@ function validateData()
     console.log(hourlyRate.value);
     if (hourlyRate.value!= undefined)
     {
-        const rateCondition =/^\d+\.?\d+$/g;
+        const rateCondition =/^\d+\.?\d?$/g;
         if(!rateCondition.test(hourlyRate.value))
         {
             error +=  "The hourly rate is invalid: must be a number <br>";
