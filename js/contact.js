@@ -31,10 +31,10 @@ function validateData()
     console.log(hourlyRate.value);
     if (hourlyRate.value!= undefined)
     {
-        const rateCondition =/^\d+\.?\d?$/g;
+        const rateCondition =/^\d+\.?\d+$/g;
         if(!rateCondition.test(hourlyRate.value))
         {
-            error +=  "The hourly rate is invalid: must be a number <br>";
+            error +=  "The hourly rate is invalid: must be a float number <br>";
             let divRateError = document.getElementById("rateError");
             divRateError.innerHTML= error;
             divRateError.style.textAlign ="center";
