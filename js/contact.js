@@ -1,7 +1,7 @@
 function validateData()
 {
     const condition = /^[a-zA-Z]+$/g;
-    const postalCondition = /^\w{6}$/g;
+    const postalCondition = /^[a-zA-Z]\d[a-zA-Z]\d[a-zA-Z]\d$/g;
     let name = document.getElementById('name').value.replace(/\s/g,'');
     let postalCode = document.getElementById('postalCode').value.replace(/\s/g,'');
     console.log(postalCode);
@@ -20,7 +20,7 @@ function validateData()
         span.innerHTML= error;
         return false;
     }
-    if (!postalCondition.test(postalCode))
+    if (postalCode.length !== 6 || !postalCondition.test(postalCode))
     {
         error +=  "the postal code is invalid <br>";
         let span = document.getElementById('postalError');
