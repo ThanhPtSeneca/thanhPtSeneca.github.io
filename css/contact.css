@@ -1,7 +1,14 @@
+header h1{
+    display: block;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
 .mainContent
 {
     display: flex;
     flex-wrap: nowrap;
+    font-family: 'Ubuntu', sans-serif;
 }
 form {
     display: block;
@@ -10,21 +17,27 @@ form {
     margin: 0 auto;
     border-radius: 10px;
     padding: 10px 20px;
-    
+    font-family: 'Ubuntu', sans-serif;
+    border-radius: 3px;
 }
 fieldset
 {
-    padding: 10px 150px;
+    
+    min-width: 600px;
+    border-radius: 3px;
+    padding: 10px 180px;
     margin: 10px 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 input[type="text"] {
     height: 30px;
-    width: 200px;
+    width: 300px;
     margin: 0px auto;
     box-sizing: border-box;
    text-align: center;
-   padding: 10px 50px;
-  
+   padding: 10px 10px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 3px;
 }
 select{
     height: 30px;
@@ -32,49 +45,72 @@ select{
     margin: 0px auto;
     box-sizing: border-box;
    text-align: left;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 div.buttons
 {
     display: flex;
     flex-wrap: nowrap;
-    margin: 20px  25%;
+    margin: 10px  28%;
     padding: 10px 10px;
+    text-align: center;
+    border-radius: 5px;
 }
 button
 { width: 160px;
     height: 30px;
     margin: 20px 20px;
-   text-align: left;
+   text-align: center;
    border:#DDDDDD solid ;
-    border-radius: 2px;
+    border-radius: 3px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 input[type="text"]
 {
-    width: 200px;
+    width: 300px;
     margin: 20px auto;
    text-align: center;
+}
+input[type="date"]
+{
+    width: 200px;
+    margin: 22px auto;
+   text-align: center;
+   border-radius: 3px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 input[type="email"]
 {
     height: 25px;
-    width: 190px;
+    width: 290px;
     margin: 20px auto;
    text-align: center;
+   border-radius: 3px;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 input[type="radio"]
 {
-    width: 100px;
-    margin: 20px auto;
-   text-align: center;
+    width: 20px;
+    margin: 20px 10px;
+    padding: auto 10px;
+   text-align: left;
+   display: table-cell;
+   vertical-align: middle;
+   cursor: pointer;
+    transition: background .25s ease;
 }
 label#rad{
     display: inline-block;
-    width: 120px;
+    width: 125px;
     text-align: left;
 }
 label{
     display: inline-block;
     width: 140px;
     text-align: left;
+}
+textarea
+{
+    margin: 20px auto;
+    border-radius: 3px;
 }

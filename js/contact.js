@@ -1,7 +1,10 @@
 function validateData()
 {
     const condition = /^[a-zA-Z]+$/g;
+    const postalCondition = /^\w{6}$/g;
     let name = document.getElementById('name').value.trim();
+    let postalCode = document.getElementById('postalCode').value.replace(/\s/g,'');
+    console.log(postalCode);
     let error="";
     if (name.length == 0)
     {
@@ -16,6 +19,29 @@ function validateData()
         let span = document.getElementById('nameErrorMes');
         span.innerHTML= error;
         return false;
+    }
+    if (!postalCondition.test(postalCode))
+    {
+        error +=  "the postal code is invalid <br>";
+        let span = document.getElementById('postalError');
+        span.innerHTML= error;
+        return false;
+    }
+    let hourlyRate = document.getElementById("hourlyRate");
+    console.log(hourlyRate.value);
+    if (hourlyRate.value!= undefined)
+    {
+        const rateCondition =/^\d+\.?\d+$/g;
+        if(!rateCondition.test(hourlyRate.value))
+        {
+            error +=  "The hourly rate is invalid: must be a number <br>";
+            let divRateError = document.getElementById("rateError");
+            divRateError.innerHTML= error;
+            divRateError.style.textAlign ="center";
+            divRateError.style.color= "red";
+            return false;
+        }
+        
     }
     return true;
 }
@@ -33,8 +59,10 @@ function displayRateBox()
     let rateLabel = document.createElement("label");
     let rateBox = document.createElement("input");
     rateBox.type="text";
-    
-    rateLabel.innerText ="Enter the hourly rate:";
+    rateBox.name="hourlyRate";
+    rateBox.id="hourlyRate";
+    rateBox.placeholder = "Enter the hourly rate"
+    rateLabel.innerText ="Hourly rate:";
     divRate.appendChild(rateLabel);
     divRate.appendChild(rateBox);
 }
