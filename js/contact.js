@@ -8,21 +8,21 @@ function validateData()
     let error="";
     if (name.length == 0)
     {
-        error +=  "name is required! <br>";
+        error +=  "Name is required! <br>";
         let div = document.getElementById('nameErrorMes');
         div.innerHTML= error;
         return false;
     }
     else if (!condition.test(name))
     {
-        error +=  "the name must be alphabet characters <br>";
+        error +=  "Name must be alphabet characters <br>";
         let span = document.getElementById('nameErrorMes');
         span.innerHTML= error;
         return false;
     }
     if (postalCode.length !== 6 || !postalCondition.test(postalCode))
     {
-        error +=  "the postal code is invalid <br>";
+        error +=  "Postal code is invalid <br>";
         let span = document.getElementById('postalError');
         span.innerHTML= error;
         return false;

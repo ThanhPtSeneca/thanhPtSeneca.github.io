@@ -10,9 +10,9 @@ flex-wrap: nowrap;
         padding: 25px auto;
 }
 
-.container   aside { width: 500px; float: left; margin: 10px auto}
+.container   aside { width: 500px; float: left; margin: 10px 25px}
     .container main  { width: 500px; float: left;
-    margin: 10px 25px; }
+    margin: 10px 25px;  }
     .container   .clear { clear: both; }
     
     footer { background-color: #aaa;  }

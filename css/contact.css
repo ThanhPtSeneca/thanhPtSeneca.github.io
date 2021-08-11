@@ -1,14 +1,16 @@
-header h1{
-    display: block;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2em;
-    text-align: center;
-}
-.mainContent
+
+section.third-color
 {
-    display: flex;
-    flex-wrap: nowrap;
+    padding: 20px auto;
+    margin: 0 auto;
     font-family: 'Ubuntu', sans-serif;
+    color: aqua;
+}
+section.third-color header {
+    display: block;
+    margin: 10px auto 0 auto;
+    padding: 30px auto 0 auto;
+    font-size: 0.75em;
 }
 form {
     display: block;
@@ -56,6 +58,11 @@ div.buttons
     text-align: center;
     border-radius: 5px;
 }
+button:hover
+{
+    background-color: navy;
+    color: paleturquoise;
+}
 button
 { width: 160px;
     height: 40px;
@@ -63,8 +70,8 @@ button
     font-size: 1.5em;
    text-align: center;
    border:#DDDDDD solid ;
-    border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 50px;
+    box-shadow: rgba(46, 33, 163, 0.35) 0px 5px 15px;
 }
 input[type="text"]
 {
@@ -107,7 +114,7 @@ label#rad{
 }
 label{
     display: inline-block;
-    width: 140px;
+    width: 120px;
     text-align: left;
 }
 textarea
